@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+      }
+      :root {
+        --black: #000000;
+        --blue: #1f91f6da;
+        --white: #ffffff;
+        --orange: #fa874e;
+        --red: #d82a2a;
+      }
+
+      body {
+        background-color: var(--black);
+        font-family: "Comic Neue", cursive;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      /* main styling */
+
+      .gradient-container {
+        margin: 120px auto;
+        max-width: 1200px;
+        background-image: linear-gradient(to right, #64dad8da, #a67cf5c5);
+      }
+
+      .list-cards-wrapper {
+        display: flex;
+        padding: 90px;
+      }
+
+      .cards-item {
+        padding: 16px;
+        max-width: 350px;
+      }
+
+      .main-img {
+        vertical-align: middle;
+        border-radius: 10px 10px 0 0;
+      }
+
+      .container-text {
+        margin-bottom: 41px;
+      }
+      .seconadry-container-text {
+        margin-bottom: 16px;
+      }
+      .card-content {
+        padding: 20px;
+        background: var(--white);
+        border-radius: 0 0 10px 10px;
+      }
+
+      .card-title {
+        color: var(--black);
+        font-size: 22px;
+        font-weight: 900;
+        letter-spacing: 1px;
+      }
+
+      .card-text {
+        color: var(--black);
+        text-align: justify;
+      }
+
+      /* button styling */
+      .btn {
+        padding: 5px 10px 5px 10px;
+        color: var(--white);
+        border-radius: 20px;
+        margin-bottom: 15px;
+        border-style: hidden;
+      }
+      .btn-blue {
+        background-image: linear-gradient(to top, #68d4dada, var(--blue));
+      }
+
+      .btn-orange {
+        background-image: linear-gradient(to top, var(--orange), #f3a46cda);
+      }
+
+      .btn-red {
+        background-image: linear-gradient(to top, #a92b2bda, var(--red));
+      }
+
+      .flex-footer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      .footer-img {
+        border-radius: 50%;
+      }
+
+      .card-footer {
+        color: var(--black);
+        max-height: 50px;
+        max-width: 50px;
+      }
+
+      .text-footer {
+        color: var(--black);
+        margin-left: 10px;
+      }
+
+      .name {
+        font-weight: 900;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="gradient-container">
+        <ul class="list-cards-wrapper">
+          <li class="cards-item">
+            <div>
+              <!-- jak usunę ten div to obrazek się wyciąga, co zrobić, żeby go nie było?-->
+              <img
+                class="main-img"
+                src="https://cdn.pixabay.com/photo/2016/03/26/13/09/workspace-1280538__340.jpg"
+                alt="table with a laptop"
+              />
+            </div>
+
+            <div class="card-content">
+              <button class="btn btn-blue">Technology</button>
+              <div class="container-text">
+                <p class="card-title">What's New In 2022 Tech</p>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                  recusandae ex quia fuga fugit laboriosam dolorem quae id dicta
+                  ipsum?
+                </p>
+              </div>
+              <div class="flex-footer">
+                <div class="card-footer">
+                  <img
+                    class="footer-img"
+                    src="https://as1.ftcdn.net/v2/jpg/02/78/68/38/1000_F_278683841_GxmxfSQixwsGzBiAioJabQdfZIIhoiPu.jpg"
+                    alt="unicorn"
+                  />
+                </div>
+                <div class="text-footer">
+                  <p class="name">Jane Doe</p>
+                  <p>2h ago</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="cards-item">
+            <div>
+              <img
+                class="main-img"
+                src="https://media.istockphoto.com/id/1368624074/pl/zdj%C4%99cie/makro-kolorowe-zdj%C4%99cie-czekoladowych-trufli-na-%C5%82upku.jpg?b=1&s=170667a&w=0&k=20&c=DPsSqtVNuVMQuujCabIsWSfrfeTKp1n6A7an5HYU-Ag="
+                alt="pralines on a black plate"
+              />
+            </div>
+            <div class="card-content">
+              <button class="btn btn-orange">Food</button>
+              <div class="container-text">
+                <p class="card-title">Delicious Food</p>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                  recusandae ex quia fuga fugit laboriosam dolorem quae id dicta
+                  ipsum?
+                </p>
+              </div>
+              <div class="flex-footer">
+                <div class="card-footer">
+                  <img
+                    class="footer-img"
+                    src="https://as1.ftcdn.net/v2/jpg/02/78/68/38/1000_F_278683841_GxmxfSQixwsGzBiAioJabQdfZIIhoiPu.jpg"
+                    alt="unicorn"
+                  />
+                </div>
+                <div class="text-footer">
+                  <p class="name">Jony Doe</p>
+                  <p>Yeasterday</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="cards-item">
+            <div>
+              <img
+                class="main-img"
+                src="https://cdn.pixabay.com/photo/2015/01/08/18/27/startup-593341__340.jpg"
+                alt="book meeting"
+              />
+            </div>
+            <div class="card-content">
+              <div class="seconadry-container-text">
+                <button class="btn btn-red">Automobile</button>
+                <p class="card-title">Race To Your Heart Content</p>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                  recusandae ex quia fuga fugit laboriosam dolorem quae id dicta
+                  ipsum?
+                </p>
+              </div>
+              <div class="flex-footer">
+                <div class="card-footer">
+                  <img
+                    class="footer-img"
+                    src="https://as1.ftcdn.net/v2/jpg/02/78/68/38/1000_F_278683841_GxmxfSQixwsGzBiAioJabQdfZIIhoiPu.jpg"
+                    alt="unicorn"
+                  />
+                </div>
+                <div class="text-footer">
+                  <p class="name">John Doe</p>
+                  <p>2d ago</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
